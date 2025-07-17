@@ -1,9 +1,8 @@
 import background from "../src/assets/background.svg";
-import foto from "/src/assets/pessoalMurilo.svg";
+import pessoalMurilo from "../src/assets/pessoalMurilo.svg";
 
 function App() {
   background;
-  foto;
 
   return (
     <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
@@ -11,11 +10,7 @@ function App() {
         <main className=" w-screen flex flex-col items-center">
           <section className="w-[80%] flex flex-col gap-3 items-center pt-12 sm:gap-9 md:flex md:flex-row-reverse md:justify-between md:pt-19 xl:w-[90%] xl:pt-20">
             <div className="w-[75%] h-[270px] rounded-full overflow-hidden border-[4px] border-amber-200/40 shadow-xl/30 flex items-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px]">
-              <img
-                className=" w-full"
-                src="../src/assets/pessoalMurilo.svg"
-                alt="foto pessoal"
-              />
+              <img className=" w-full" src={pessoalMurilo} alt="foto pessoal" />
             </div>
 
             <div className="gap-2 flex flex-col md:gap-11 lg:w-[400px] xl:w-[500px]">
