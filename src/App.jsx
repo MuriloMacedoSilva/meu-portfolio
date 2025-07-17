@@ -12,7 +12,7 @@ function App() {
       <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
         <div className="bg-indigo-950/70 w-screen justify-center">
           <main className=" w-screen flex flex-col items-center gap-7">
-            <section className="w-[80%] flex flex-col gap-3 items-center pt-12 sm:gap-9 md:flex md:flex-row-reverse md:justify-between md:pt-19 xl:w-[90%] xl:pt-20">
+            <section className="w-[80%] flex flex-col gap-3 items-center pt-12 sm:gap-9 md:flex md:flex-row-reverse md:justify-between md:pt-19 xl:w-[90%] xl:pt-20 xl:px-[70px]">
               <div className="cursor-pointer w-[75%] h-[270px] rounded-full overflow-hidden border-[4px] border-amber-200/40 shadow-xl/30 flex items-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px]">
                 <img
                   className=" w-full"
