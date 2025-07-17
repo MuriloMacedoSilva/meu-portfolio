@@ -18,7 +18,7 @@ function App() {
                 <h1 className="text-white font-light text-[32px] leading-6 xl:text-[50px]">
                   Olá! Eu sou
                 </h1>
-                <h2 className="text-blue-400 font-light text-[53px] md:text-[42px] xl:text-[73px]">
+                <h2 className="text-blue-400 font-light text-[49px] md:text-[42px] xl:text-[73px]">
                   Murilo Macedo
                 </h2>
               </div>
