@@ -1,14 +1,9 @@
 import background from "../src/assets/background.svg";
-import foto from "../src/assets/foto.jpeg";
+import foto from "../src/assets/foto.svg";
 
 function App() {
   background;
   foto;
-
-  const habilidades = [
-    {logo: "", nome: "html"},
-    {logo: "", nome: "css"}
-  ]
 
   return (
     <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
@@ -18,7 +13,7 @@ function App() {
             <div className="w-[75%] h-[270px] rounded-full overflow-hidden border-[4px] border-amber-200/40 shadow-xl/30 flex items-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px]">
               <img
                 className=" w-full"
-                src="../src/assets/foto.jpeg"
+                src="../src/assets/foto.svg"
                 alt="foto pessoal"
               />
             </div>
@@ -65,7 +60,9 @@ function App() {
             </div>
           </section>
           <section>
-            <h2 className="text-amber-200 font-light text-[50px]">Habilidades</h2>
+            <h2 className="text-amber-200 font-light text-[50px]">
+              Habilidades
+            </h2>
           </section>
         </main>
       </div>
