@@ -1,16 +1,17 @@
 import background from "../src/assets/background.svg";
 import pessoalMurilo from "../src/assets/pessoalMurilo.svg";
 import eclipse1 from "../src/assets/Ellipse1.svg";
+import "../src/App.css";
 
 function App() {
   background;
   eclipse1;
 
   return (
-    <html >
+    <html className="custom-cursor">
       <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
         <div className="bg-indigo-950/70 w-screen justify-center">
-          <main className=" w-screen flex flex-col items-center">
+          <main className=" w-screen flex flex-col items-center gap-7">
             <section className="w-[80%] flex flex-col gap-3 items-center pt-12 sm:gap-9 md:flex md:flex-row-reverse md:justify-between md:pt-19 xl:w-[90%] xl:pt-20">
               <div className="cursor-pointer w-[75%] h-[270px] rounded-full overflow-hidden border-[4px] border-amber-200/40 shadow-xl/30 flex items-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px]">
                 <img
@@ -31,9 +32,7 @@ function App() {
                 </div>
                 <div className="w-full flex justify-center xl:justify-start">
                   <p className="text-amber-50 font-light text-center text-[18px] md:text-[14px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias esse iste ipsa eaque, illum officiis sed, magnam porro
-                    veritatis quod, ul
+                    Full-Stack Developer | Ex-Aluno PROA | React.Js, Tailwind CSS | Figma | Python, Java, SpringBoot | MySQL | Git, Github
                   </p>
                 </div>
                 <div className=" w-full flex flex-col items-center justify-center gap-2 pt-4 lg:gap-2.5 lg:flex lg:flex-row-reverse xl:w-full xl:justify-start xl:items-start">
@@ -134,7 +133,11 @@ function App() {
                 </div>
               </div>
             </section>
-            <section></section>
+            <section>
+              <h2 className="text-amber-200 font-light text-[50px]">
+                Projetos
+              </h2>
+            </section>
           </main>
         </div>
       </div>
