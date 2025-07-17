@@ -1,5 +1,5 @@
 import background from "../src/assets/background.svg";
-import foto from "../src/assets/foto.svg";
+import foto from "../src/assets/foto.png";
 
 function App() {
   background;
@@ -13,7 +13,7 @@ function App() {
             <div className="w-[75%] h-[270px] rounded-full overflow-hidden border-[4px] border-amber-200/40 shadow-xl/30 flex items-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px]">
               <img
                 className=" w-full"
-                src="../src/assets/foto.svg"
+                src="../src/assets/foto.png"
                 alt="foto pessoal"
               />
             </div>
