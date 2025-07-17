@@ -1,5 +1,5 @@
 import background from "../src/assets/background.svg";
-import foto from "../src/assets/foto.png";
+import foto from "/src/assets/foto.png";
 
 function App() {
   background;
