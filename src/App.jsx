@@ -31,16 +31,16 @@ function App() {
                   </h2>
                 </div>
                 <div className="w-full flex justify-center xl:justify-start">
-                  <p className="text-amber-50 font-light text-center text-[18px] md:text-[14px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start">
+                  <p className="text-white font-light text-center text-[18px] md:text-[14px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start">
                     Full-Stack Developer | Ex-Aluno PROA | React.Js, Tailwind
                     CSS | Figma | Python, Java, SpringBoot | MySQL | Git, Github
                   </p>
                 </div>
                 <div className=" w-full flex flex-col items-center justify-center gap-2 pt-4 lg:gap-2.5 lg:flex lg:flex-row-reverse xl:w-full xl:justify-start xl:items-start">
-                  <button className="w-full border border-gray-50 text-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center text-[18px] lg:w-[300px] xl:w-[300px] hover:bg-fuchsia-100 hover:text-cyan-950 transition duration-280">
+                  <button className="w-full border border-gray-50 text-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center text-[18px] lg:w-[300px] xl:w-[300px] hover:bg-white hover:text-cyan-950 transition duration-280">
                     Download CV
                   </button>
-                  <button className="w-full border border-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center bg-fuchsia-100 text-cyan-950 text-[18px] lg:w-[300px] xl:w-[300px]">
+                  <button className="w-full border border-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center bg-white text-cyan-950 text-[18px] lg:w-[300px] xl:w-[300px]">
                     Contato
                   </button>
                 </div>
