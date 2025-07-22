@@ -42,7 +42,7 @@ function App() {
                 </div>
                 <div className="w-full flex justify-center xl:justify-start">
                   <p className="text-white font-light text-center text-[18px] md:text-[14px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start">
-                    Full-Stack Developer | Ex-Aluno PROA | React.Js, Tailwind
+                    Desenvolvedor Full Stack | Ex-Aluno PROA | React.Js, Tailwind
                     CSS | Figma | Python, Java, SpringBoot | MySQL | Git, Github
                   </p>
                 </div>
