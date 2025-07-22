@@ -1,6 +1,6 @@
 function Habilidades() {
   return (
-    <section className=" w-full pb-[50px] px-[70px] -bg-linear-180 from-gray-100/90 to-gray-300/90 flex flex-col items-center gap-17">
+    <section className=" w-full pb-[50px] px-[70px] -bg-linear-180 from-white/90 to-gray-50/90 flex flex-col items-center gap-17">
       <h2 className="text-gray-900 text-shadow-lg text-shadow-white/30 font-light text-[50px]">
         Habilidades
       </h2>

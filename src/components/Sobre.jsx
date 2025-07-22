@@ -1,6 +1,6 @@
 function Sobre() {
   return (
-    <section className=" bg-gray-100/90 w-full px-[50px] flex items-center justify-center pt-13">
+    <section className=" bg-white/90 w-full px-[50px] flex items-center justify-center pt-13">
       <div className="w-full flex flex-col items-center justify-center pt-[40px] pb-[100px] gap-11">
         <h2 className="text-gray-900 font-light text-shadow-sm text-shadow-white/30 text-[50px]">
           Sobre
