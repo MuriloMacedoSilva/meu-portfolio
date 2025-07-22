@@ -4,6 +4,9 @@ import eclipse1 from "../src/assets/Ellipse1.svg";
 import "../src/App.css";
 import { MoveDown } from "lucide-react";
 import { Menu } from "lucide-react";
+import Sobre from "./components/Sobre.jsx";
+import Habilidades from "./components/Habilidades.jsx";
+import Projetos from "./components/Projetos.jsx";
 
 function App() {
   background;
@@ -58,109 +61,12 @@ function App() {
                 <MoveDown />
               </div>
             </section>
-            <section className=" bg-gray-100/90 w-full px-[50px] flex items-center justify-center pt-13">
-              <div className="w-full flex flex-col items-center justify-center pt-[40px] pb-[100px] gap-11">
-                <h2 className="text-gray-900 font-light text-shadow-sm text-shadow-white/30 text-[50px]">
-                  Sobre
-                </h2>
-                <p className="text-black font-light text-[18px] text-center xl:w-[700px] xl:text-[19px]">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-                  iusto delectus doloribus est enim quas saepe, minima totam sit
-                  vitae, laborum, corrupti commodi vel unde natus. Quas
-                  assumenda pariatur rerum?Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Sint obcaecati, ipsam enim
-                  repudiandae facilis aut perspiciatis ea quidem minima numquam
-                  voluptatem commodi sed ut exercitationem. Suscipit temporibus
-                  beatae explicabo eligendi? Lorem ipsum, dolor sit amet
-                  consectetur adipisicing elit. Exercitationem quo libero
-                  placeat nobis repellat obcaecati odit, cupiditate labore
-                  architecto neque ratione maxime laboriosam magnam delectus
-                  voluptatum reiciendis et vero? Tempore?Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Incidunt, eveniet tempora!
-                  Aliquid commodi dolore itaque perspiciatis. Ad facilis
-                  nesciunt sit laboriosam pariatur distinctio ipsam dignissimos,
-                  delectus, natus ullam, maxime dolores.
-                </p>
-              </div>
-            </section>
-            <section className=" w-full pb-[50px] px-[70px] -bg-linear-180 from-gray-100/90 flex flex-col items-center gap-17">
-              <h2 className="text-gray-900 text-shadow-lg text-shadow-white/30 font-light text-[50px]">
-                Habilidades
-              </h2>
-              <div className="w-[90%] grid grid-cols-2 gap-15 justify-between sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">HTML5</p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">CSS3</p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    JavaScript
-                  </p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    React.Js
-                  </p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    Tailwind CSS
-                  </p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">Figma</p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    Jupyter
-                  </p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    Python
-                  </p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">Java</p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    SpringBoot
-                  </p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">MySQL</p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">Git</p>
-                </div>
-                <div className="hover:bg-white/30 p-[8px] rounded transition duration-250 flex flex-col items-center justify-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-                  <p className="text-[23px] text-blue-950 font-medium">
-                    GitHub
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section className="-bg-linear-180 from-black/80 to-black/10  w-full pt-28 flex flex-col items-center">
-              <h2 className=" text-blue-300 text-shadow-lg text-shadow-white/20 font-light text-[50px]">
-                Projetos
-              </h2>
-            </section>
+
+            <Sobre />
+
+            <Habilidades />
+
+            < Projetos />
           </main>
         </div>
       </div>
