@@ -7,6 +7,7 @@ import { Menu } from "lucide-react";
 import Sobre from "./components/Sobre.jsx";
 import Habilidades from "./components/Habilidades.jsx";
 import Projetos from "./components/Projetos.jsx";
+import Contatos from "./components/Contatos.jsx";
 
 function App() {
   background;
@@ -42,8 +43,9 @@ function App() {
                 </div>
                 <div className="w-full flex justify-center xl:justify-start">
                   <p className="text-white font-light text-center text-[18px] md:text-[14px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start">
-                    Desenvolvedor Full Stack | Ex-Aluno PROA | React.Js, Tailwind
-                    CSS | Figma | Python, Java, SpringBoot | MySQL | Git, Github
+                    Desenvolvedor Full Stack | Ex-Aluno PROA | React.Js,
+                    Tailwind CSS | Figma | Python, Java, SpringBoot | MySQL |
+                    Git, Github
                   </p>
                 </div>
                 <div className=" w-full flex flex-col items-center justify-center gap-2 pt-4 lg:gap-2.5 lg:flex lg:flex-row-reverse xl:w-full xl:justify-start xl:items-start">
@@ -66,7 +68,9 @@ function App() {
 
             <Habilidades />
 
-            < Projetos />
+            <Projetos />
+
+            <Contatos />
           </main>
         </div>
       </div>

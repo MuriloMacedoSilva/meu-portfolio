@@ -69,8 +69,8 @@ function Projetos() {
   projeto;
 
   return (
-    <section className="-bg-linear-210 from-gray-50/90 from-50% to-50% to-black/80  w-full flex flex-col items-center">
-      <h2 className=" text-gray-900 text-shadow-lg text-shadow-white/30 font-light text-[50px] mt-20">
+    <section className="-bg-linear-210 from-gray-50/90 from-50% to-50% to-black/90  w-full flex flex-col items-center">
+      <h2 className=" text-gray-900 text-shadow-lg text-shadow-white/30 font-light text-[50px]">
         Projetos
       </h2>
       <div className="flex flex-col items-center justify-around w-[full] p-13 gap-14 mt-17 sm:grid sm:p-23 md:grid md:grid-cols-3 md:p-10 xl:grid-cols-3 xl:p-20">
@@ -102,7 +102,13 @@ function Projetos() {
         ))}
       </div>
       <div className="w-full flex items-center justify-center p-14">
-        <a href="https://murilomacedosilva.github.io/MapaDeCarreira/" target="_blank" className="">Mapa de Carreira</a>
+        <a
+          href="https://murilomacedosilva.github.io/MapaDeCarreira/"
+          target="_blank"
+          className="cursor-pointer p-[5px] bg-amber-300 border items-center justify-center max-w-[100%] min-w-[300px] shadow-2xl flex rounded-3xl h-[45px] hover:scale-105 transition duration-300"
+        >
+          Mapa de Carreira
+        </a>
       </div>
     </section>
   );
