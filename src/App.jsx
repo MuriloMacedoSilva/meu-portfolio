@@ -8,6 +8,8 @@ import Sobre from "./components/Sobre.jsx";
 import Habilidades from "./components/Habilidades.jsx";
 import Projetos from "./components/Projetos.jsx";
 import Contatos from "./components/Contatos.jsx";
+import { Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 function App() {
   background;
@@ -17,21 +19,39 @@ function App() {
     <html className="custom-cursor">
       <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
         <div className="-bg-linear-210 from-black/90 from-5% to-100% xl:from-25% via-white/90 to-black/80 w-screen justify-center">
-          <header className=" w-full items-center justify-start px-[84px] py-[40px]">
+          <header className=" w-full items-center justify-between px-[40px] md:px-[86px] py-[40px] flex ">
             <div className="text-white hover:bg-yellow-400 hover:text-yellow-400 rounded-full w-[40px] h-[40px] py-1 border-white items-center justify-center flex transition duration-250 ease-in-out">
               <Menu />
+            </div>
+            <div className="flex justify-between p-1 gap-7">
+              <a
+                href="https://github.com/MuriloMacedoSilva"
+                target="_blank"
+                className="text-white cursor-pointer text-[17px] border border-white p-1.5 rounded-[5px] hover:bg-white hover:text-black transition duration-200"
+              >
+                <Github />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/murilo-macedo-8b1567316/"
+                target="_blank"
+                className="text-white cursor-pointer text-[17px] border border-white p-1.5 rounded-[5px] hover:bg-white hover:text-black transition duration-200"
+              >
+                <Linkedin />
+              </a>
             </div>
           </header>
           <main className=" w-screen flex flex-col items-center">
             <section className="w-[86%] flex flex-col gap-3 items-center sm:gap-9 md:flex md:flex-row-reverse md:justify-between">
-              <a href="https://github.com/MuriloMacedoSilva" target="_blank" className="hover:scale-105 transition duration-150">
-                <div className="bg-white cursor-pointer w-[75%] h-[270px] rounded-full overflow-hidden border-[4px] border-white/90 shadow-white shadow-xl/30 flex items-center justify-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px]">
-                  <img
-                    className=" w-full"
-                    src={pessoalMurilo}
-                    alt="foto pessoal"
-                  />
-                </div>
+              <a
+                href="https://github.com/MuriloMacedoSilva"
+                target="_blank"
+                className="bg-white cursor-pointer w-[270px] h-[270px] rounded-full overflow-hidden border-[4px] border-white/90 shadow-white shadow-xl/30 flex items-center justify-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px] hover:scale-105 transition duration-300"
+              >
+                <img
+                  className=" w-full"
+                  src={pessoalMurilo}
+                  alt="foto pessoal"
+                />
               </a>
 
               <div className="gap-2 flex flex-col md:gap-11 lg:w-[400px] xl:w-[500px]">
@@ -61,8 +81,9 @@ function App() {
                     </button>
                   </a>
                   <a
-                    href=""
+                    href="https://wa.me/5511985323292"
                     className="w-full items-center justify-center flex"
+                    target="_blank"
                   >
                     <button className="w-full border border-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center bg-white text-cyan-950 text-[18px]">
                       Contato
