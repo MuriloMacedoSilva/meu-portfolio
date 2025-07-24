@@ -1,11 +1,42 @@
+import { useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function Sobre() {
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#Paragrafo", {
+      translateX: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#Sobre",
+        start: "top 80px",
+        end: "bottom 920px",
+        scrub: true,
+      },
+    });
+
+    return () => {
+      gsap.killTweensOf("#Paragrafo");
+    };
+  }, []);
+
   return (
-    <section className=" bg-white/90 w-full px-[50px] flex items-center justify-center pt-13">
+    <section
+      id="Sobre"
+      className="z-1 bg-white w-full px-[50px] flex items-center justify-center pt-30"
+    >
       <div className="w-full flex flex-col items-center justify-center pt-[40px] pb-[100px] gap-11">
-        <h2 className="text-gray-900 font-light text-shadow-sm text-shadow-white/30 text-[50px]">
+        <h2
+          id="TituloSobre"
+          className="text-gray-900 font-light text-shadow-sm text-shadow-white/30 text-[50px]"
+        >
           Sobre
         </h2>
-        <p className="text-black leading-[30px] font-light text-[18px] text-center xl:w-[700px] xl:text-[19px]">
+        <p
+          id="Paragrafo"
+          className="text-black leading-[30px] font-light text-[18px] text-center xl:w-[700px] xl:text-[19px] transform translate-x-7 opacity-0"
+        >
           Sou Murilo Macedo Silva, desenvolvedor full stack com sólida formação
           técnica e paixão por transformar ideias em soluções digitais de alto
           impacto. Atuo no desenvolvimento de sites modernos, sistemas robustos,

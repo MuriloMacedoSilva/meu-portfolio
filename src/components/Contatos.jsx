@@ -3,14 +3,41 @@ import { Phone } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import { Instagram } from "lucide-react";
+import { useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Contatos() {
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#contatosBut", {
+      translateX: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#Contatos",
+        start: "top 150px",
+        end: "bottom 595px",
+        scrub: true,
+      },
+    });
+
+    return () => {
+      gsap.killTweensOf("#Contatos");
+    };
+  }, []);
+
   return (
-    <section className=" bg-black/90 w-full flex flex-col items-center justify-center gap-20 pb-50 pt-15">
+    <section
+      id="Contatos"
+      className="z-1 bg-black w-full flex flex-col items-center justify-center gap-20 pb-50 pt-30"
+    >
       <h2 className="text-white text-shadow-2xs text-shadow-white/30 font-light text-[50px]">
         Contatos
       </h2>
-      <div className="w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row">
+      <div
+        id="contatosBut"
+        className="translate-x-7 opacity-0 w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
+      >
         <a
           href="https://www.murilomacedo.dev73@gmail.com/"
           target="_blank"

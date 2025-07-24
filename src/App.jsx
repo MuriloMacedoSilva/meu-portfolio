@@ -2,7 +2,7 @@ import background from "../src/assets/background.svg";
 import pessoalMurilo from "../src/assets/pessoalMurilo.svg";
 import eclipse1 from "../src/assets/Ellipse1.svg";
 import "../src/App.css";
-import { MoveDown } from "lucide-react";
+import { MoveDown, Sticker } from "lucide-react";
 import { Menu } from "lucide-react";
 import Sobre from "./components/Sobre.jsx";
 import Habilidades from "./components/Habilidades.jsx";
@@ -10,19 +10,33 @@ import Projetos from "./components/Projetos.jsx";
 import Contatos from "./components/Contatos.jsx";
 import { Github } from "lucide-react";
 import { Linkedin } from "lucide-react";
+import { useState } from "react";
 
 function App() {
   background;
   eclipse1;
 
+  const [menu, setMenu] = useState(false);
+
+  function verMenu() {
+    setMenu(menu === true ? false : true);
+  }
+
   return (
-    <html className="custom-cursor">
+    <html className="overflow-x-hidden custom-cursor scroll-smooth">
       <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
-        <div className="-bg-linear-210 from-black/90 from-5% to-100% xl:from-25% via-white/90 to-black/80 w-screen justify-center">
-          <header className=" w-full items-center justify-between px-[40px] md:px-[86px] py-[40px] flex ">
-            <div className="text-white hover:bg-yellow-400 hover:text-yellow-400 rounded-full w-[40px] h-[40px] py-1 border-white items-center justify-center flex transition duration-250 ease-in-out">
+        <div
+          id="Inicio"
+          className=" -bg-linear-210 from-black/90 from-5% to-100% xl:from-25% via-white/90 to-black/80 w-screen justify-center"
+        >
+          <header className="top-0 left-0 z-[120] w-full items-center justify-between px-[40px] md:px-[86px] py-[40px] flex ">
+            <div
+              onClick={(e) => verMenu(e)}
+              className="text-white hover:bg-yellow-400 hover:text-yellow-400 rounded-full w-[40px] h-[40px] py-1 border-white items-center justify-center flex transition duration-250 ease-in-out z-[101]"
+            >
               <Menu />
             </div>
+
             <div className="flex justify-between p-1 gap-7">
               <a
                 href="https://github.com/MuriloMacedoSilva"
@@ -41,7 +55,7 @@ function App() {
             </div>
           </header>
           <main className=" w-screen flex flex-col items-center">
-            <section className="w-[86%] flex flex-col gap-3 items-center sm:gap-9 md:flex md:flex-row-reverse md:justify-between">
+            <section className="sticky top-0 left-0 snap-start  w-[86%] flex flex-col gap-3 items-center sm:gap-9 md:flex md:flex-row-reverse md:justify-between">
               <a
                 href="https://github.com/MuriloMacedoSilva"
                 target="_blank"
@@ -108,6 +122,57 @@ function App() {
           </main>
         </div>
       </div>
+      {menu === true && (
+        <nav className="z-[100] w-screen h-screen top-0 bg-black absolute flex items-center justify-center py-44 transition duration-300">
+          <ul className=" w-[80%] flex flex-col items-center justify-center gap-6 p-5">
+            <li>
+              <a
+                href="#Inicio"
+                className="text-white hover:text-amber-400 cursor-pointer font-light text-[40px]"
+                onClick={(e) => verMenu(e)}
+              >
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a
+                href="#Sobre"
+                className="text-white hover:text-amber-400 cursor-pointer font-light text-[40px]"
+                onClick={(e) => verMenu(e)}
+              >
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a
+                href="#Habilidades"
+                className="text-white hover:text-amber-400 cursor-pointer font-light text-[40px]"
+                onClick={(e) => verMenu(e)}
+              >
+                Habilidades
+              </a>
+            </li>
+            <li>
+              <a
+                href="#Projetos"
+                className="text-white hover:text-amber-400 cursor-pointer font-light text-[40px]"
+                onClick={(e) => verMenu(e)}
+              >
+                Projetos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#Contatos"
+                className="text-white hover:text-amber-400 cursor-pointer font-light text-[40px]"
+                onClick={(e) => verMenu(e)}
+              >
+                Contatos
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )}
     </html>
   );
 }
