@@ -16,7 +16,7 @@ function Contatos() {
       scrollTrigger: {
         trigger: "#Contatos",
         start: "top 150px",
-        end: "bottom 595px",
+        end: "bottom 611px",
         scrub: true,
       },
     });
@@ -36,7 +36,7 @@ function Contatos() {
       </h2>
       <div
         id="contatosBut"
-        className="translate-x-7 opacity-0 w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
+        className="translate-x-6 opacity-0 w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
       >
         <a
           href="https://www.murilomacedo.dev73@gmail.com/"
