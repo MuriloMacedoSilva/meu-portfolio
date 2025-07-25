@@ -11,7 +11,7 @@ function Sobre() {
       scrollTrigger: {
         trigger: "#Sobre",
         start: "top 80px",
-        end: "bottom 1250px",
+        end: "bottom 1330px",
         scrub: true,
       },
     });
