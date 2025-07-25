@@ -11,7 +11,7 @@ function Sobre() {
       scrollTrigger: {
         trigger: "#Sobre",
         start: "top 80px",
-        end: "bottom 940px",
+        end: "bottom 959px",
         scrub: true,
       },
     });
@@ -24,7 +24,7 @@ function Sobre() {
   return (
     <section
       id="Sobre"
-      className="z-1 bg-white w-full px-[50px] flex items-center justify-center pt-30"
+      className="z-1 bg-white w-full px-[50px] flex items-center justify-center pt-10"
     >
       <div className="w-full flex flex-col items-center justify-center pt-[40px] pb-[100px] gap-11">
         <h2
@@ -35,7 +35,7 @@ function Sobre() {
         </h2>
         <p
           id="Paragrafo"
-          className="text-black leading-[30px] font-light text-[18px] text-center xl:w-[700px] xl:text-[19px] transform translate-x-3 opacity-0"
+          className="text-black leading-[30px] font-light text-[18px] text-center xl:w-[700px] xl:text-[19px] transform translate-x-2 opacity-0"
         >
           Sou Murilo Macedo Silva, desenvolvedor full stack com sólida formação
           técnica e paixão por transformar ideias em soluções digitais de alto

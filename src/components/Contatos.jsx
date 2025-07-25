@@ -16,7 +16,7 @@ function Contatos() {
       scrollTrigger: {
         trigger: "#Contatos",
         start: "top 150px",
-        end: "bottom 611px",
+        end: "bottom 630px",
         scrub: true,
       },
     });
@@ -29,14 +29,14 @@ function Contatos() {
   return (
     <section
       id="Contatos"
-      className="z-1 bg-black w-full flex flex-col items-center justify-center gap-20 pb-50 pt-30"
+      className="z-1 bg-black w-full flex flex-col items-center justify-center gap-20 pb-30 pt-30"
     >
       <h2 className="text-white text-shadow-2xs text-shadow-white/30 font-light text-[50px]">
         Contatos
       </h2>
       <div
         id="contatosBut"
-        className="translate-x-6 opacity-0 w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
+        className="translate-x-4 opacity-0 w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
       >
         <a
           href="https://www.murilomacedo.dev73@gmail.com/"
