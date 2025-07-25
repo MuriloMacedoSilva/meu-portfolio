@@ -55,13 +55,13 @@ function Sobre() {
           processos, analiso dados para tomada de decisões estratégicas e
           proporciono alta relação custo-benefício para meus clientes.
           <br /> <br />
-          Meu objetivo vai além do desenvolvimento técnico: busco gerar valor
+          <strong className="text-cyan-950 font-[500]">Meu objetivo vai além do desenvolvimento técnico: busco gerar valor
           real por meio da tecnologia, ajudando empresas e profissionais a
           prospectar mais clientes, otimizar seus processos e destacar-se em um
           mercado cada vez mais competitivo.
           <br /> <br />
           Se você busca inovação, confiabilidade e um parceiro comprometido com
-          o sucesso do seu projeto, estou pronto para fazer a diferença.
+          o sucesso do seu projeto, estou pronto para fazer a diferença.</strong>
         </p>
       </div>
     </section>

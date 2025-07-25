@@ -69,7 +69,10 @@ function Projetos() {
   projeto;
 
   return (
-    <section id="Projetos" className="z-1 -bg-linear-210 from-gray-50 from-50% to-50% to-black  w-full flex flex-col items-center pt-30">
+    <section
+      id="Projetos"
+      className="z-1 -bg-linear-210 from-gray-50 from-50% to-50% to-black  w-full flex flex-col items-center pt-30"
+    >
       <h2 className=" text-gray-900 text-shadow-lg text-shadow-white/30 font-light text-[50px]">
         Projetos
       </h2>
