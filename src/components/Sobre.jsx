@@ -27,6 +27,7 @@ function Sobre() {
 
   return (
     <section
+      id="Sobre"
       className="z-1 bg-white w-full px-[50px] flex items-center justify-center pt-10"
     >
       <div  className="w-full flex flex-col items-center justify-center pt-[40px] pb-[100px] gap-11  ">
@@ -63,7 +64,7 @@ function Sobre() {
           proporciono alta relação custo-benefício para meus clientes.</p>
           <img src={tech} alt="tecnologia" className="shadow-lg shadow-black/30  hover:scale-105 transform duration-300" />
         </div>
-        <div className="w-screen px-[50px] flex justify-center items-center bg-black py-[100px] shadow-lg shadow-black/30">
+        <div className=" mt-[30px] w-screen px-[50px] flex justify-center items-center bg-black py-[130px] shadow-lg shadow-black/30">
           <p
           className="text-black min-w-[350px] max-w-[600px] leading-[30px] font-light text-[17px] text-center  xl:text-[18px]"
         >
