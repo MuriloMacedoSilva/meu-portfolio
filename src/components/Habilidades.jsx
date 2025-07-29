@@ -14,7 +14,7 @@ function Habilidades() {
       scrollTrigger: {
         trigger: "#Habilidades", 
         start: "top 200px",
-        end: "bottom 900px",
+        end: "bottom 950px",
         scrub: true
       }
     })

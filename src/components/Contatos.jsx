@@ -16,7 +16,7 @@ function Contatos() {
       scrollTrigger: {
         trigger: "#Contatos",
         start: "top 150px",
-        end: "bottom 630px",
+        end: "bottom 647px",
         scrub: true,
       },
     });
@@ -52,7 +52,7 @@ function Contatos() {
           className="text-white p-5 text-[20px] gap-1 flex-col md:text-[17px] w-[150px] h-[150px] flex items-center justify-center rounded-full border-3 hover:scale-105 transition duration-200 border-white"
         >
           <Phone />
-          <p className="text-white">Telefone</p>
+          <p className="text-white">WathsApp</p>
         </a>
         <a
           href="https://www.linkedin.com/in/murilo-macedo-8b1567316/"

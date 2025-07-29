@@ -80,7 +80,7 @@ function Projetos() {
         {projeto.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center shadow-2xl bg-gray-50 cursor-pointer pb-4 rounded-2xl hover:scale-105 transition duration-300"
+            className="flex flex-col items-center justify-center shadow-2xl bg-gray-50 cursor-pointer pb-4 hover:scale-105 transition duration-300"
             onClick={() => verProjeto(index)}
           >
             <img src={item.imagem} />

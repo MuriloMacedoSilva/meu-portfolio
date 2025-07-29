@@ -27,12 +27,12 @@ function App() {
       <div className="bg-[url('../src/assets/background.svg')] bg-cover bg-center w-screen">
         <div
           id="Inicio"
-          className=" -bg-linear-210 from-black/90 from-5% to-100% xl:from-25% via-white/90 to-black/80 w-screen justify-center"
+          className=" -bg-linear-210 from-black from-5% to-100% xl:from-25% via-white/90 to-black w-screen justify-center"
         >
-          <header className="top-0 left-0 z-[120] w-full items-center justify-between px-[40px] md:px-[86px] py-[40px] flex ">
+          <header className=" bg-black sticky top-0 left-0 z-[120] w-full items-center justify-between px-[40px] md:px-[30px] py-[15px] flex ">
             <div
               onClick={(e) => verMenu(e)}
-              className="text-white hover:bg-yellow-400 hover:text-yellow-400 rounded-full w-[40px] h-[40px] py-1 border-white items-center justify-center flex transition duration-250 ease-in-out z-[101]"
+              className="z-[10000] text-white hover:bg-yellow-400 hover:text-yellow-400 rounded-full w-[40px] h-[40px] py-1 border-white items-center justify-center flex transition duration-250 ease-in-out"
             >
               <Menu />
             </div>
@@ -53,77 +53,8 @@ function App() {
                 <Linkedin />
               </a>
             </div>
-          </header>
-          <main className=" w-screen flex flex-col items-center">
-            <section className="sticky top-0 left-0 snap-start  w-[86%] flex flex-col gap-3 items-center sm:gap-9 md:flex md:flex-row-reverse md:justify-between">
-              <a
-                href="https://github.com/MuriloMacedoSilva"
-                target="_blank"
-                className="bg-white cursor-pointer w-[270px] h-[270px] rounded-full overflow-hidden border-[4px] border-white/90 shadow-white shadow-xl/30 flex items-center justify-center sm:w-[400px] sm:h-[400px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px] hover:scale-105 transition duration-300"
-              >
-                <img
-                  className=" w-full"
-                  src={pessoalMurilo}
-                  alt="foto pessoal"
-                />
-              </a>
-
-              <div className="gap-2 flex flex-col md:gap-11 lg:w-[400px] xl:w-[500px]">
-                <div className="w-full pt-7 items-center flex flex-col lg:text-left lg:items-start">
-                  <h1 className="text-white font-light text-[32px] leading-6 xl:text-[50px]">
-                    Olá! Eu sou
-                  </h1>
-                  <h2 className="text-blue-300 text-shadow-lg text-shadow-white/15 font-light text-[49px] md:text-[42px] xl:text-[73px]">
-                    Murilo Macedo
-                  </h2>
-                </div>
-                <div className="w-full flex justify-center xl:justify-start">
-                  <p className="text-white font-light text-center text-[18px] md:text-[14px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start">
-                    Desenvolvedor Full Stack | Ex-Aluno PROA | React.Js,
-                    Tailwind CSS | Figma | Python, Java, SpringBoot | MySQL |
-                    Git, Github
-                  </p>
-                </div>
-                <div className=" w-full flex flex-col items-center justify-center gap-2 pt-4 lg:gap-2.5 lg:flex lg:flex-row-reverse xl:w-full xl:justify-start xl:items-start">
-                  <a
-                    href="https://drive.google.com/file/d/1VKFXExKqfd9QubFzZNgpAqSs-7Bst7_I/view?usp=drive_link"
-                    target="_blank"
-                    className="w-full items-center justify-center flex"
-                  >
-                    <button className="w-full border border-gray-50 text-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center text-[18px] hover:bg-white hover:text-cyan-950 transition duration-280">
-                      Download CV
-                    </button>
-                  </a>
-                  <a
-                    href="https://wa.me/5511985323292"
-                    className="w-full items-center justify-center flex"
-                    target="_blank"
-                  >
-                    <button className="w-full border border-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center bg-white text-cyan-950 text-[18px]">
-                      Contato
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section className="w-screen flex items-center justify-center mt-14">
-              <div className="rounded-full p-1.5 bg-white/50 animate-bounce shadow-2xl">
-                <MoveDown />
-              </div>
-            </section>
-
-            <Sobre />
-
-            <Habilidades />
-
-            <Projetos />
-
-            <Contatos />
-          </main>
-        </div>
-      </div>
-      {menu === true && (
-        <nav className="z-[100] w-screen h-screen top-0 bg-black absolute flex items-center justify-center py-44 transition duration-300">
+            {menu === true && (
+        <nav className="z-[120] w-screen h-screen top-0 bottom-0 left-0 bg-black absolute flex items-center justify-center py-44 transition duration-300">
           <ul className=" w-[80%] flex flex-col items-center justify-center gap-6 p-5">
             <li>
               <a
@@ -173,6 +104,76 @@ function App() {
           </ul>
         </nav>
       )}
+          </header>
+          <main className="w-screen flex flex-col items-center">
+            <section className="pt-[20px] pb-[50px] px-[20px] sticky top-0 left-0 snap-start w-full flex flex-col gap-0 items-center sm:gap-9 md:flex md:flex-row-reverse md:justify-around">
+              <a
+                href="https://github.com/MuriloMacedoSilva"
+                target="_blank"
+                className="bg-white cursor-pointer w-[240px] h-[240px] rounded-full overflow-hidden border-[4px] border-white/90 shadow-white shadow-xl/30 flex items-center justify-center sm:w-[250px] sm:h-[250px] md:w-[800px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[450px] xl:h-[450px] hover:scale-105 transition duration-300"
+              >
+                <img
+                  className=" w-full"
+                  src={pessoalMurilo}
+                  alt="foto pessoal"
+                />
+              </a>
+
+              <div className="gap-1 flex flex-col md:gap-11 lg:w-[400px] xl:w-[500px]">
+                <div className="w-full pt-6 items-center flex flex-col lg:text-left lg:items-start">
+                  <h1 className="text-white font-light text-[29px] leading-5 md:text-40 lg:text-[46] xl:text-[50px]">
+                    Olá! Eu sou
+                  </h1>
+                  <h2 className="text-blue-300 text-shadow-lg text-shadow-white/15 font-light text-[46px] md:text-[49px] lg:text-[57px] xl:text-[73px]">
+                    Murilo Macedo
+                  </h2>
+                </div>
+                <div className="w-full flex justify-center xl:justify-start">
+                  <p className="text-white font-light text-center text-[15px] md:text-[17px] lg:text-left lg:items-start lg:justify-end xl:text-[18px] xl:w-[400px] xl:justify-start leading-5">
+                    Desenvolvedor Full Stack | Ex-Aluno PROA | React.Js,
+                    Tailwind CSS | Figma | Python, Java, SpringBoot | MySQL |
+                    Git, Github
+                  </p>
+                </div>
+                <div className=" w-full flex flex-col items-center justify-center gap-2 pt-4 lg:gap-2.5 lg:flex lg:flex-row-reverse xl:w-full xl:justify-start xl:items-start">
+                  <a
+                    href="https://drive.google.com/file/d/1VKFXExKqfd9QubFzZNgpAqSs-7Bst7_I/view?usp=drive_link"
+                    target="_blank"
+                    className="w-full items-center justify-center flex"
+                  >
+                    <button className="w-full border border-gray-50 text-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center text-[18px] hover:bg-white hover:text-cyan-950 transition duration-280">
+                      Download CV
+                    </button>
+                  </a>
+                  <a
+                    href="https://wa.me/5511985323292"
+                    className="w-full items-center justify-center flex"
+                    target="_blank"
+                  >
+                    <button className="w-full border border-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center bg-white text-cyan-950 text-[18px]">
+                      Contato
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section className="w-screen flex items-center justify-center mt-14">
+              <div className="rounded-full p-1.5 bg-white/50 animate-bounce shadow-2xl">
+                <MoveDown />
+              </div>
+            </section>
+
+            <Sobre />
+
+            <Habilidades />
+
+            <Projetos />
+
+            <Contatos />
+          </main>
+        </div>
+      </div>
+      
     </html>
   );
 }
