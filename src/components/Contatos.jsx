@@ -16,7 +16,7 @@ function Contatos() {
       scrollTrigger: {
         trigger: "#Contatos",
         start: "top 150px",
-        end: "bottom 800px",
+        end: "bottom 1000px",
         scrub: true,
       },
     });
