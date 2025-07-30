@@ -64,7 +64,7 @@ function Sobre() {
           proporciono alta relação custo-benefício para meus clientes.</p>
           <img src={tech} alt="tecnologia" className="shadow-lg shadow-black/30  hover:scale-105 transform duration-300" />
         </div>
-        <div className=" mt-[30px] w-screen px-[50px] flex justify-center items-center bg-black py-[130px] shadow-lg shadow-black/30">
+        <div className=" mt-[30px] w-screen px-[50px] flex justify-center items-center bg-black py-[130px] shadow-lg shadow-black/30 flex-col gap-15">
           <p
           className="text-black min-w-[350px] max-w-[600px] leading-[30px] font-light text-[17px] text-center  xl:text-[18px]"
         >
@@ -76,6 +76,15 @@ function Sobre() {
           Se você busca inovação, confiabilidade e um parceiro comprometido com
           o sucesso do seu projeto, estou pronto para fazer a diferença.</strong>
         </p>
+        <a
+                    href="https://wa.me/5511985323292"
+                    className="w-[350px] items-center justify-center flex"
+                    target="_blank"
+                  >
+                    <button className="w-full border border-gray-50 font-medium cursor-pointer rounded-2xl h-[50px] flex items-center justify-center text-white text-[18px] hover:bg-white hover:text-cyan-950 transition duration-280">
+                      Contato
+                    </button>
+                  </a>
         </div>
       </div>
     </section>
