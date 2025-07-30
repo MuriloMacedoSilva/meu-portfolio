@@ -15,9 +15,10 @@ function Contatos() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#Contatos",
-        start: "top 150px",
-        end: "bottom 1000px",
+        start: "top 300px",
+        end: "bottom 1500px",
         scrub: true,
+
       },
     });
 
