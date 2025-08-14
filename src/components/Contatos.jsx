@@ -8,24 +8,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Contatos() {
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#contatosBut", {
-      translateX: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: "#Contatos",
-        start: "top 300px",
-        end: "bottom 1500px",
-        scrub: true,
-
-      },
-    });
-
-    return () => {
-      gsap.killTweensOf("#Contatos");
-    };
-  }, []);
 
   return (
     <section
@@ -37,7 +19,7 @@ function Contatos() {
       </h2>
       <div
         id="contatosBut"
-        className="translate-x-4 opacity-0 w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
+        className=" w-[90%] flex flex-col items-center justify-center gap-7 md:flex-row"
       >
         <a
           href="https://www.murilomacedo.dev73@gmail.com/"
