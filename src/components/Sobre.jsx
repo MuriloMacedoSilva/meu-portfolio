@@ -28,7 +28,7 @@ function Sobre() {
   return (
     <section
       id="Sobre"
-      className="z-1 bg-white w-full px-[50px] flex items-center justify-center pt-10"
+      className="z-1 bg-white w-full xl:px-[200px] px-[50px] flex items-center justify-center pt-10"
     >
       <div  className="w-full flex flex-col items-center justify-center pt-[40px] pb-[100px] gap-11  ">
         <h2
